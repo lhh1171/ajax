@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="username" type="text" placeholder="名称"/>
+<input id="password" type="password" placeholder="密码"/>
+<button id="login">提交</button>
+</body>
+</html>
+<script type="text/javascript" src="src/main/webapp/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#login").click(function () {
+        $.ajax({
+            url: "http://localhost:8080/web_test/login",
+            method: "post",
+            data: {'username': $("#username").val(), 'password': $("#password").val()},
+            xhrFields: {
+                withCredentials: true //允许跨域带Cookie
+            },
+            success: function (result) {
+                window.location.href="./TestPage.html";
+            },
+            error: function (result) {
+                alert(result.responseText)
+            }
+        })
+    });
+</script>

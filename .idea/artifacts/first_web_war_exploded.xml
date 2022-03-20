@@ -1,0 +1,53 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="first-web:war exploded">
+    <output-path>$PROJECT_DIR$/target/first-web</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>first-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="first-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.3.0" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
+          <element id="library" level="project" name="Maven: org.redisson:redisson:3.13.6" />
+          <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-resolver-dns:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec-dns:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.52.Final" />
+          <element id="library" level="project" name="Maven: javax.cache:cache-api:1.0.0" />
+          <element id="library" level="project" name="Maven: io.projectreactor:reactor-core:3.3.9.RELEASE" />
+          <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.3" />
+          <element id="library" level="project" name="Maven: io.reactivex.rxjava2:rxjava:2.2.19" />
+          <element id="library" level="project" name="Maven: org.jboss.marshalling:jboss-marshalling-river:2.0.10.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.marshalling:jboss-marshalling:2.0.10.Final" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.27" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.1" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.10.14" />
+          <element id="library" level="project" name="Maven: org.jodd:jodd-bean:5.1.6" />
+          <element id="library" level="project" name="Maven: org.jodd:jodd-core:5.1.6" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.5" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/first-web/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="first-web/web/Web" />
+    </root>
+  </artifact>
+</component>
